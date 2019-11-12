@@ -18,4 +18,3 @@ cypress/integration/examples/utilities.spec.js
 cypress/integration/examples/viewport.spec.js
 cypress/integration/examples/waiting.spec.js
 cypress/integration/examples/window.spec.js
-cypress/integration/tests/login.spec.js
