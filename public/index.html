@@ -13,22 +13,27 @@
     <body>
         <div class="mt-5">
             <form action="/login" method="POST" class="text-center w-25 m-auto">
-                <h1 class="mb-3">Login</h1>
+                <h1 class="mb-3" data-cy="login-text">Login</h1>
                 <input 
-                type="email"                     
-                id="inputEmail" 
-                class="form-control mb-4" 
-                placeholder="Email" 
-                required
+                    type="email"                     
+                    id="inputEmail" 
+                    data-cy="email"
+                    class="form-control mb-4" 
+                    placeholder="Email" 
+                    required
                 />
                 <input
-                type="password"
-                id="inputPassword"
-                class="form-control mb-4"
-                placeholder="Password"
-                required
+                    type="password"
+                    id="inputPassword"
+                    data-cy="password"
+                    class="form-control mb-4"
+                    placeholder="Password"
+                    required
             />
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+            <button 
+                class="btn btn-lg btn-primary btn-block" 
+                data-cy="submit-button"
+                type="submit">Sign In</button>
             </form>
         </div>
     </body>
