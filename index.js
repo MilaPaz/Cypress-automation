@@ -4,6 +4,11 @@ const path = require("path")
 
 const PORT = 3000;
 
+// backend-side delay
+app.use(function(req, res, next){
+    setTimeout(next, 3000)
+})
+
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 app.get("/", (req, res) => {
